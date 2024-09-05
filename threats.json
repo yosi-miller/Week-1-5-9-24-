@@ -1,0 +1,56 @@
+[
+  {
+    "ThreatType": "Malware",
+    "Volume": 3,
+    "Sophistication": 2,
+    "Target": "Web Server"
+  },
+  {
+    "ThreatType": "DDoS",
+    "Volume": 5,
+    "Sophistication": 5,
+    "Target": "Database"
+  },
+  {
+    "ThreatType": "Ransomware",
+    "Volume": 5,
+    "Sophistication": 6,
+    "Target": "Database"
+  },
+  {
+    "ThreatType": "Phishing",
+    "Volume": 1,
+    "Sophistication": 3,
+    "Target": "User Credentials"
+  },
+  {
+    "ThreatType": "Insider Threat",
+    "Volume": 10,
+    "Sophistication": 10,
+    "Target": "User Credentials"
+  },
+  {
+    "ThreatType": "Botnet",
+    "Volume": 1,
+    "Sophistication": 1,
+    "Target": "Web Server"
+  },
+  {
+    "ThreatType": "SQL Injection",
+    "Volume": 4,
+    "Sophistication": 4,
+    "Target": "Database"
+  },
+  {
+    "ThreatType": "Brute Force Attack",
+    "Volume": 100,
+    "Sophistication": 3,
+    "Target": "User Credentials"
+  },
+  {
+    "ThreatType": "Man-in-the-Middle",
+    "Volume": 2,
+    "Sophistication": 5,
+    "Target": "Web Server"
+  }
+]
