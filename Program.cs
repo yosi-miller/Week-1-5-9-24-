@@ -25,7 +25,7 @@ namespace Week_1_5_9_24_
         {
             Console.WriteLine("1.1 start to read informtion from defence json");
             List<NodeDefenceModelDTO> nodeDefenceModels = JsonActions.ReadDefenseJson();
-            //Thread.Sleep(4000);
+            Thread.Sleep(4000);
 
             Console.WriteLine("1.3 insert defence to tree");
             // insert to the BinaryTree
@@ -39,15 +39,15 @@ namespace Week_1_5_9_24_
                     binaryTree.Insert(nodeDefence);
                 }
             }
-            //Thread.Sleep(4000);
+            Thread.Sleep(4000);
 
             Console.WriteLine("2.2 print the tree");
             binaryTree.PrintTree();
-            //Thread.Sleep(4000);
+            Thread.Sleep(4000);
 
             Console.WriteLine("3 start to read informtion from defence json");
             List<ThreatsModel> threats = JsonActions.ReadThreatsJson();
-            //Thread.Sleep(4000);
+            Thread.Sleep(4000);
 
             Console.WriteLine("4 calculate the number of severity");
             // O(N)
@@ -55,8 +55,8 @@ namespace Week_1_5_9_24_
             {
                 threat.Severity = (threat.Volume + threat.Sophistication) + SeverityNumber(threat.Target);
             }
-            //Thread.Sleep(4000);
-            
+            Thread.Sleep(4000);
+
             Console.WriteLine("5 start threat and find defence");
             foreach (ThreatsModel threat in threats)
             {

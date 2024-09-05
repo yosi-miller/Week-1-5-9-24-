@@ -68,26 +68,26 @@ namespace Week_1_5_9_24_
         // O(Log N)
         public void FindDefencePreorder(TreeNode node, int severity)
         {
-            bool found = false;
+            //bool found = false;
             if (node == null)
                 return;
 
             if (severity == node.Value.GetMinSeverity() || severity == node.Value.GetMinSeverity())
             {
-                Console.WriteLine(node.Value.GetDefenses()[0] + " " + node.Value.GetDefenses()[1]);
-                found = true;
+                Console.WriteLine(node.Value.GetDefenses()[0] + ", " + node.Value.GetDefenses()[1]);
+                //found = true;
             }
             if (severity < node.Value.GetMinSeverity())
                 Console.WriteLine("is severity Attack below the threshold.Attack is ignored");
-
+            Thread.Sleep(2000);
             // Recur on left subtree
             FindDefencePreorder(node.Left, severity);
 
             // Recur on right subtree
             FindDefencePreorder(node.Right, severity);
 
-            if (!found)
-                Console.WriteLine("was defence suitable No !found. Brace for impact");
+            //if (!found)
+            //    Console.WriteLine("was defence suitable No !found. Brace for impact");
         }
     }
 }
