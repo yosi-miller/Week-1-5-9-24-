@@ -1,0 +1,162 @@
+[
+  {
+    "MinSeverity": 19,
+    "MaxSeverity": 20,
+    "Defenses": [
+      "Trigger full system lockdown",
+      "Deploy emergency defenses"
+    ]
+  },
+  {
+    "MinSeverity": 9,
+    "MaxSeverity": 10,
+    "Defenses": [
+      "Block IP range",
+      "Increase monitoring"
+    ]
+  },
+  {
+    "MinSeverity": 3,
+    "MaxSeverity": 4,
+    "Defenses": [
+      "Rate-limit IPs",
+      "Activate basic firewall"
+    ]
+  },
+  {
+    "MinSeverity": 1,
+    "MaxSeverity": 2,
+    "Defenses": [
+      "Monitor traffic",
+      "Log incident"
+    ]
+  },
+  {
+    "MinSeverity": 5,
+    "MaxSeverity": 6,
+    "Defenses": [
+      "Isolate affected systems",
+      "Deploy malware scan"
+    ]
+  },
+  {
+    "MinSeverity": 7,
+    "MaxSeverity": 8,
+    "Defenses": [
+      "Activate IDS",
+      "Notify security team"
+    ]
+  },
+  {
+    "MinSeverity": 13,
+    "MaxSeverity": 14,
+    "Defenses": [
+      "Activate full network scan",
+      "Increase logging detail"
+    ]
+  },
+  {
+    "MinSeverity": 11,
+    "MaxSeverity": 12,
+    "Defenses": [
+      "Deploy advanced firewall",
+      "Quarantine infected hosts"
+    ]
+  },
+  {
+    "MinSeverity": 15,
+    "MaxSeverity": 16,
+    "Defenses": [
+      "Lockdown network segments",
+      "Activate disaster recovery"
+    ]
+  },
+  {
+    "MinSeverity": 17,
+    "MaxSeverity": 18,
+    "Defenses": [
+      "Notify external security",
+      "Initiate incident response"
+    ]
+  },
+  {
+    "MinSeverity": 29,
+    "MaxSeverity": 30,
+    "Defenses": [
+      "Deploy honeypots",
+      "Alert system administrators"
+    ]
+  },
+  {
+    "MinSeverity": 23,
+    "MaxSeverity": 24,
+    "Defenses": [
+      "Engage threat intelligence",
+      "Perform security audit"
+    ]
+  },
+  {
+    "MinSeverity": 21,
+    "MaxSeverity": 22,
+    "Defenses": [
+      "Monitor high-priority targets",
+      "Activate advanced monitoring"
+    ]
+  },
+  {
+    "MinSeverity": 25,
+    "MaxSeverity": 26,
+    "Defenses": [
+      "Perform system reboot",
+      "Update security policies"
+    ]
+  },
+  {
+    "MinSeverity": 27,
+    "MaxSeverity": 28,
+    "Defenses": [
+      "Evaluate network traffic",
+      "Remove unauthorized access"
+    ]
+  },
+  {
+    "MinSeverity": 35,
+    "MaxSeverity": 36,
+    "Defenses": [
+      "Engage legal team",
+      "Begin public communication"
+    ]
+  },
+  {
+    "MinSeverity": 31,
+    "MaxSeverity": 32,
+    "Defenses": [
+      "Initiate emergency shutdown",
+      "Prepare disaster recovery"
+    ]
+  },
+  {
+    "MinSeverity": 33,
+    "MaxSeverity": 34,
+    "Defenses": [
+      "Activate all available defenses",
+      "Notify senior management"
+    ]
+  },
+  {
+    "MinSeverity": 37,
+    "MaxSeverity": 38,
+    "Defenses": [
+      "Coordinate with law enforcement",
+      "Escalate to CEO"
+    ]
+  },
+  {
+    "MinSeverity": 39,
+    "MaxSeverity": 40,
+    "Defenses": [
+      "Prepare for full shutdown",
+      "Deploy final countermeasures"
+    ]
+  }
+]
