@@ -31,7 +31,9 @@ namespace Week_1_5_9_24_.Models
         {
             return MaxSeverity;
         }
-        public List<string>  GetMaxDefenses()
+
+        // O(1)
+        public List<string> GetDefenses()
         {
             return Defenses;
         }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Week_1_5_9_24_.Models;
+﻿using Week_1_5_9_24_.Models;
 
 namespace Week_1_5_9_24_
 {
@@ -41,5 +36,30 @@ namespace Week_1_5_9_24_
         {
             return value.GetMaxSeverity() + value.GetMaxSeverity();
         }
+
+        // O(1)
+        public void PrintTree()
+        {
+            printPreorder(Root);
+        }
+
+        // O(Log N)
+        public void printPreorder(TreeNode node)
+        {
+            if (node == null)
+                return;
+
+            // Deal with the node
+            Console.WriteLine("[" + node.Value.GetMinSeverity().ToString() + "-" + node.Value.GetMinSeverity().ToString() + "] Defenses: " + node.Value.GetDefenses()[0] + ", " + node.Value.GetDefenses()[1]);
+
+            // Recur on left subtree
+            printPreorder(node.Left);
+
+            // Recur on right subtree
+            printPreorder(node.Right);
+        }
+
+        // O(Log N)
+        public void Search(int )
     }
 }
