@@ -12,7 +12,7 @@ namespace Week_1_5_9_24_.Models
         public int Volume { get; set; }
         public int Sophistication { get; set; }
         public string Target { get; set; }
-        public int? Severity { get; set; }
+        public int Severity { get; set; }
 
     }
 }

@@ -50,7 +50,7 @@ namespace Week_1_5_9_24_
                 return;
 
             // Deal with the node
-            Console.WriteLine("[" + node.Value.GetMinSeverity().ToString() + "-" + node.Value.GetMinSeverity().ToString() + "] Defenses: " + node.Value.GetDefenses()[0] + ", " + node.Value.GetDefenses()[1]);
+            Console.WriteLine("[" + node.Value.GetMinSeverity().ToString() + "-" + node.Value.GetMaxSeverity().ToString() + "] Defenses: " + node.Value.GetDefenses()[0] + ", " + node.Value.GetDefenses()[1]);
 
             // Recur on left subtree
             printPreorder(node.Left);
@@ -60,6 +60,34 @@ namespace Week_1_5_9_24_
         }
 
         // O(Log N)
-        public void Search(int )
+        public void Search(int Severity)
+        {
+            FindDefencePreorder(Root, Severity);
+        }
+
+        // O(Log N)
+        public void FindDefencePreorder(TreeNode node, int severity)
+        {
+            bool found = false;
+            if (node == null)
+                return;
+
+            if (severity == node.Value.GetMinSeverity() || severity == node.Value.GetMinSeverity())
+            {
+                Console.WriteLine(node.Value.GetDefenses()[0] + " " + node.Value.GetDefenses()[1]);
+                found = true;
+            }
+            if (severity < node.Value.GetMinSeverity())
+                Console.WriteLine("is severity Attack below the threshold.Attack is ignored");
+
+            // Recur on left subtree
+            FindDefencePreorder(node.Left, severity);
+
+            // Recur on right subtree
+            FindDefencePreorder(node.Right, severity);
+
+            if (!found)
+                Console.WriteLine("was defence suitable No !found. Brace for impact");
+        }
     }
 }
